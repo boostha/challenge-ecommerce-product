@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/app.js" defer></script>
+  <script src="assets/js/product.js" defer></script>
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+<body>
+  <div class="nav-cart display-none">
+    <p class="cart-text">Cart</p>
+    <p class="empty"> Your cart is empty.</p>
+  </div>
+
+  <header>
+    <nav class="nav-container">
+      <ul class="nav-wrapper">
+        <div class="nav-list">
+          <img class="logo" src="images/logo.svg" alt="logo">
+          <li class="nav-item"><a href="#">Collections</a></li>
+          <li class="nav-item"><a href="#">Men</a></li>
+          <li class="nav-item"><a href="#">Women</a></li>
+          <li class="nav-item"><a href="#">About</a></li>
+          <li class="nav-item"><a href="#">Contact</a></li>
+        </div>
+        <div class="nav-list">
+          <div class="nav-cart-container">
+            <img src="images/icon-cart.svg" alt="cart" class="cart">
+
+          </div>
+          <img src="images/image-avatar.png" alt="avatar" width="50">
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-display">
+      <div class="product-container">
+        <div class="selected-product">
+          <img src="images/image-product-1.jpg" alt="product one" width="600" class="product-image">
+        </div>
+        <div class="product-thumbnail">
+        </div>
+      </div>
+      <div class="product-info-container">
+        <h3>Sneaker Company</h3>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+        <div class="cost">
+          <div class="current-cost">
+            <h2>$125.00</h2>
+            <p class="discount">50%</p>
+          </div>
+          <p class="original">$250.00</p>
+        </div>
+        <div class="cart-container">
+          <div class="quantity-container">
+            <img src="images/icon-minus.svg" alt="minus" class="minus cart-btn">
+            <p class="quantity-count"></p>
+            <img src="images/icon-plus.svg" alt="plus" class="plus cart-btn">
+          </div>
+          <div class="add-to-cart cart-btn">
+            <img src="images/icon-cart.svg" alt="cart" class="cart">
+            <p>Add to cart</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
